@@ -11,11 +11,9 @@ services:
       context: .
       args:
         VITE_API_URL: /api/classificar
-    container_name: integracar-frontend
+    container_name: frontend-classificador
     depends_on:
       - api
-    ports:
-      - "5173:80"
     networks:
       - internal
       - proxy
